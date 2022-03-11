@@ -7,5 +7,8 @@ USER python
 
 WORKDIR /home/python/app
 
+#adicionar o projeto no Path do Python
+ENV PYTHONPATH=${PYTHONPATH}/home/python/app/src
+
 # segura  a imagem para não morrer
 CMD ["tail", "-f", "/dev/null"]
