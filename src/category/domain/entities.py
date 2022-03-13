@@ -1,0 +1,20 @@
+from argparse import BooleanOptionalAction
+from datetime import datetime
+from dataclasses import dataclass , field
+from typing import Optional
+
+
+@dataclass()
+class Category:
+
+    name: str
+    description: Optional[str] = None
+    is_active: Optional[bool] = True
+    created_at: Optional[datetime] = field(default_factory=lambda: datetime.now())
+
+
+print(Category('Movie'))
+print(Category('Movie'))
+print(Category('Movie'))
+print(Category('Movie'))
+print(Category('Movie'))
