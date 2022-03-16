@@ -1,7 +1,9 @@
 FROM python:3.10.2-slim
 
 # instalar o JRE - Java Runtime
-RUN apt update && apt install -y --no-install-recommends default-jre
+RUN apt update && apt install -y --no-install-recommends \
+                    default-jre \
+                    git
 
 # cria usuário python (criando a pasta home/python)
 RUN useradd -ms /bin/bash python
