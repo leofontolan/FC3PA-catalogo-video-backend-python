@@ -18,5 +18,5 @@ ENV PYTHONPATH=${PYTHONPATH}/home/python/app/src
 # configurar a variavel de ambiente do Java
 ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 
-# segura  a imagem para não morrer
+# segura  a imagem para não morrer!
 CMD ["tail", "-f", "/dev/null"]
