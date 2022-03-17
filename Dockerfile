@@ -36,7 +36,8 @@ RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/
                         -a 'export TERM=xterm-256color'
 
 # Colocar a Wizard de configuração do Powerleve10K do .zshrc
-RUN echo [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh >> ~/.zshrc
+RUN echo '[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh' >> ~/.zshrc
+
 
 # Mantem o container ativo
 CMD ["tail", "-f", "/dev/null"]
