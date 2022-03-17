@@ -37,7 +37,7 @@ RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/
 
 # Colocar a Wizard de configuração do Powerleve10K do .zshrc
 RUN echo '[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh' >> ~/.zshrc && \
-    echo 'HISTFILE=/home/python/zsh/.zsh_history' >>  ~/.zshrc
+    echo 'HISTFILE=/home/python/zsh/.zsh_history' >> ~/.zshrc
 
 
 # Mantem o container ativo
